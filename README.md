@@ -7,3 +7,4 @@
 ![Screenshot (73)](https://github.com/FordPipatkittikul/Assignment-3-MongoDB-Setup-and-Queries/assets/121902625/a2fcf39a-7349-415f-8daf-b271b97ead6f)
 
 ## question 2
+**query** : db.movies.find({year: { $gt: 2014 },"imdb.rating": { $gt: 9 }}).sort({ runtime: -1 }).projection({ _id: 0, title: 1, year: 1, "imdb.rating": 1 })
